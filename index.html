@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Steven Chen - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
-        <div class="container">
-            <h1>Your Name</h1>
+        <div class="header-container">
+            <h1>Steven Chen</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -30,11 +30,22 @@
             <p>Discover my work, skills, and experiences.</p>
         </div>
     </section>
+    
 
     <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm a Computer Science major with a passion for coding and technology. I'm experienced in various programming languages and enjoy working on innovative projects.</p>
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="./images/no-image-found.jpg" alt="Your Image">
+            </div>
+            <div class="about-header">
+                <h2>About Me</h2>
+            <p class="about-description">Hello, I'm Steven Chen</p>
+            <p class="about-description">I graduated with a Bachelor's degree in Computer Science from the University of California, 
+                Davis, and professional experience as a Software Engineer. My coursework and projects have equipped me with skills in operating systems, 
+                computer networks, artificial intelligence, and full-stack development. While my practical experience includes 
+                software development, troubleshooting, and collaboration within interdisciplinary teams. I'm passionate about leveraging 
+                technology to solve complex problems and eager to continue growing and learning in the ever-evolving field of computer science.</p>
+            </div>
         </div>
     </section>
 
@@ -42,16 +53,27 @@
         <div class="container">
             <h2>Work Experience</h2>
             <div class="work-experience">
-                <h3>Job Title 1</h3>
-                <p>Company Name, Location</p>
-                <p>Dates of Employment</p>
-                <p>Brief description of your role and responsibilities.</p>
+                <h3>Software Engineer</h3>
+                <p class="company">
+                    Mattson Technology 
+                    <span class="location">Fremont, California</span>
+                </p>
+                <p class="duration">Oct 2021 -  May 2023</p>
+                <p class="work-experience-description">At Mattson Technology, I worked as a Software Engineer from July to December 2023, enhancing the EFEM for
+                     a silicon wafer processing machine. My role involved writing backend code for various devices, implementing new features, and drafting detailed documentation for 
+                    troubleshooting and maintenance. I collaborated extensively with cross-functional teams to optimize the system’s performance.</p>
             </div>
             <div class="work-experience">
-                <h3>Job Title 2</h3>
-                <p>Company Name, Location</p>
-                <p>Dates of Employment</p>
-                <p>Brief description of your role and responsibilities.</p>
+                <h3>Student IT Support and Maintenance Technician</h3>
+                <p class="company">
+                    Information and Educational Technology (UC Davis) 
+                    <span class="location">Davis, California</span>
+                </p>
+                <p class="duration">Oct 2021 -  May 2023</p>
+                <p class="work-experience-description">At UC Davis' Information and Educational Technology, I served as a Student IT Support and Maintenance Technician 
+                    from October 2021 to May 2023. My responsibilities included troubleshooting and resolving software and internet issues, as well as conducting routine 
+                    maintenance on various campus technologies like servers, speakers, and displays.</p>
+                <a> signed UDA well</a>
             </div>
             <!-- Add more work experiences as needed -->
         </div>
@@ -62,19 +84,43 @@
             <h2>Projects</h2>
             <div class="project">
                 <div class="project-description">
-                    <h3>Project 1</h3>
-                    <p>Description of your project. Mention the technologies used and the purpose of the project.</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+                    <h3>UCD EcoCar EV year one Development</h3>
+                    <p>My subteam are tasked with integrating and enhancing radar and camera systems for an autonomous vehicle. Our project leverages cutting-edge tools 
+                        like YOLOv8 for object detection and DSpace Aurelion for realistic sensor simulation. We aim to refine the sensor fusion architecture, allowing 
+                        for robust perception and tracking of various objects within the vehicle's environment. This project not only challenges us to apply complex algorithms 
+                        and manage high-end software but also enables us to tackle real-world engineering problems in autonomous systems development.</p>
+                    <a target="_blank">signed UDA so nope :( </a>
                 </div>
-                <img src="path/to/your/image1.jpg" alt="Project 1 Image">
+                <img src="./images/ShowcasePoster.png" alt="Project 1 Image">
             </div>
             <div class="project">
                 <div class="project-description">
-                    <h3>Project 2</h3>
-                    <p>Description of your project. Mention the technologies used and the purpose of the project.</p>
-                    <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+                    <h3>Water-Level Prediction Model</h3>
+                    <p>As a team member of the Water-Level project, I've been involved in developing a machine learning model to predict the water levels of Lake Berryessa, 
+                        especially critical given California's ongoing drought conditions. Our project utilizes a variety of data, including inflow, outflow, and precipitation 
+                        rates, sourced from the California Department of Water Resources. We created predictive models using both polynomial regression and neural networks, attempting to 
+                        provide reliable forecasts that could help in managing water resources more effectively.</p>
+                    <a href="https://github.com/GuestAGuy/Water-Level" target="_blank">View on GitHub</a>
                 </div>
-                <img src="path/to/your/image2.jpg" alt="Project 2 Image">
+                <img src="./images/Berryessa.jpg" alt="Project 2 Image">
+            </div>
+            <div class="project">
+                <div class="project-description">
+                    <h3>Vampire surival like game</h3>
+                    <p>In the ECS-189 Project, I developed the custom weapon systems using Unity, focusing on creating distinctive projectile and melee weapons with features like Pierce,
+                         Chain, Explosive, and Boomerang effects. I tackled gameplay mechanics to prevent projectiles from repeatedly hitting the same enemy using a list-based tracking 
+                         system. Additionally, I integrated an armor system and other feature for the player character, enhancing both the strategic depth and 
+                         balance of gameplay. This project allowed me to refine our game's interactive and combat elements significantly.</p>
+                    <a href="https://github.com/cioudfox/ECS-189-Project" target="_blank">View on GitHub</a>
+                </div>
+                <img src="./images/game1.png" alt="Project 3 Image">
+            </div>
+            <div class="project">
+                <div class="project-description">
+                    <h3>various project</h3>
+                    <p>Various Project I worked on my own for academic reason, for learning, or for fun.</p>
+                    <a href="https://github.com/GuestAGuy/Mixed-Projects/tree/main" target="_blank">View on GitHub</a>
+                </div>
             </div>
             <!-- Add more projects as needed -->
         </div>
@@ -84,10 +130,11 @@
         <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li>Programming Languages: Java, Python, C++</li>
-                <li>Web Development: HTML, CSS, JavaScript, React</li>
-                <li>Databases: MySQL, MongoDB</li>
-                <li>Tools: Git, Docker, Jenkins</li>
+                <li>Programming Languages: C++, Python, JavaScript, Go, C#, Latex, Prolog, HTML, CSS</li>
+                <li>Frameworks/Libraries/Database: OpenCV, React, Express, Numpy, Pandas, Seaborn, Keras, sklearn, gRPC, MySQL, RocksDB, etc</li>
+                <li>Databases: MySQL, MongoDB, RocksDB</li>
+                <li>Tools: Git, Docker, WireShark, Unity, DSpace, Aurelion, Azure, MatLab, BitBucket</li>
+                <li>Operating Systems: Windows, Linux</li>
                 <!-- Add more skills as needed -->
             </ul>
         </div>
@@ -96,23 +143,27 @@
     <section id="resume" class="section">
         <div class="container">
             <h2>Resume</h2>
-            <p><a href="resume.pdf" target="_blank" class="btn">Download my resume</a></p>
-            <!-- You can also embed your resume here -->
+            <div class="resume-container">
+                <iframe src="./Steven_Chen_Resume.pdf" width="100%" height="600px"></iframe>
+            </div>
+            <p>
+                <a href="./Steven_Chen_Resume.pdf" target="_blank" class="btn" download>Download my resume</a>
+            </p>
         </div>
     </section>
 
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+            <p>Email: <a href="mailto:stevenchen01@yahoo.com">stevenchen01@yahoo.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername" target="_blank">https://www.linkedin.com/in/steven-chen-25b101212/</a></p>
+            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/guestaguy</a></p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Steven Chen. All rights reserved.</p>
         </div>
     </footer>
 

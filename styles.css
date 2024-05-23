@@ -64,15 +64,21 @@ nav ul li a:hover {
     padding-top: 80px;
 }
 
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
 .section {
-    padding: 4em 0;
+    padding: 6em 0;  /* Increased padding for larger margins */
     background: #1e1e1e;
     border-bottom: 1px solid #2c2c2c;
 }
 
 .landing {
     height: 100vh;
-    background: url('path/to/your/landing-image.jpg') no-repeat center center/cover;
+    background: url('./images/landing.png') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,7 +114,88 @@ h2::after {
     left: 0;
 }
 
-.work-experience, .project {
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-header {
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+    width: 90%;
+}
+
+.about-description {
+    flex: 1;
+    text-align: left;
+    padding: 1em;
+    width: 90%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.work-experience {
+    background: #2c2c2c;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* Ensure positioning for child elements */
+}
+
+.work-experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.work-experience h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ccc;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.duration {
+    color: #888;
+    margin-left: 2em;
+}
+
+.location {
+    color: #888;
+    margin-left: 1em;
+}
+
+.work-experience-description {
+    margin-left: 2em;
+    margin-right: 2em;
+    color: #ddd;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #2c2c2c;
     padding: 1.5em;
     margin-bottom: 1em;
@@ -117,25 +204,20 @@ h2::after {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.work-experience:hover, .project:hover {
+.project:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
-.work-experience h3, .project h3 {
+.project h3 {
     margin-top: 0;
     color: #fff;
 }
 
-.project {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .project-description {
     flex: 1;
-    margin-right: 1em;
+    margin-right: 10em;
+    margin-left: 2em;
 }
 
 .project img {
@@ -189,6 +271,13 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+.resume-container {
+    margin: 2em 0;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .btn {
