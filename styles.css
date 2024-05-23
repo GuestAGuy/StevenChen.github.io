@@ -216,7 +216,7 @@ h2::after {
 
 .project-description {
     flex: 1;
-    margin-right: 10em;
+    margin-right: 10%;
     margin-left: 2em;
 }
 
@@ -294,4 +294,13 @@ footer p {
 .btn:hover {
     background: #0056b3;
     transform: translateY(-3px);
+}
+
+#contact a {
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #ccc; /* Optional: Change the hover color to a slightly different shade */
 }
